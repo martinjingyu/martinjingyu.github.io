@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jingyu Huang personal website">
+  <title>Jingyu Huang</title>
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --link: #1d4ed8;
+      --bg: #ffffff;
+      --max-width: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(var(--max-width), calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.75rem 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      margin-bottom: 2.5rem;
+    }
+
+    .intro .subtitle {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    section {
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .item {
+      margin-bottom: 1.5rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: baseline;
+      margin-bottom: 0.35rem;
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    .item-meta {
+      color: var(--muted);
+      white-space: nowrap;
+      font-size: 0.95rem;
+    }
+
+    .item-subtitle {
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin: 0.25rem 0;
+    }
+
+    .footer {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+      }
+
+      .item-meta {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <h1>Jingyu Huang</h1>
+      <p class="subtitle">Computer Science student at the University of Wisconsin-Madison</p>
+      <p>
+        I am interested in LLM agents, reinforcement learning, AI safety, multi-turn reasoning,
+        retrieval-augmented generation, and machine learning systems.
+      </p>
+      <div class="links">
+        <a href="mailto:jhuang664@wisc.edu">jhuang664@wisc.edu</a>
+        <a href="https://github.com/martinjingyu" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="Jingyu_Huang.pdf" target="_blank" rel="noreferrer">CV</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">University of Wisconsin-Madison</div>
+          <div class="item-meta">Sept 2024 - Present</div>
+        </div>
+        <div class="item-subtitle">BS in Computer Science</div>
+        <p>Coursework: Big Data Systems, Machine Learning, Intro to AI</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Beijing University of Posts and Telecommunications</div>
+          <div class="item-meta">Sept 2021 - June 2024</div>
+        </div>
+        <div class="item-subtitle">BS in Telecommunication with Management</div>
+        <p>Coursework: Data Structures, Machine Learning, Principles of Telecommunication</p>
+        <p>Language proficiency: IELTS 7.0, TOEFL 95</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Research Intern, SecureFinAI Lab, Columbia University</div>
+          <div class="item-meta">Remote · July 2025 - Sept 2025</div>
+        </div>
+        <ul>
+          <li>Developed a RAG system tailored for the finance domain.</li>
+          <li>Built an EMIR-focused QA agent for regulatory and compliance queries.</li>
+          <li>Designed core task suites for VCBench with investment-oriented evaluation tasks.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Research Intern, SafoLab</div>
+          <div class="item-meta">Madison, WI · Aug 2024 - Aug 2025</div>
+        </div>
+        <ul>
+          <li>Worked on the Amazon Nova AI Challenge with a focus on LLM safety and adversarial testing.</li>
+          <li>Designed and implemented an automated red-teaming agent.</li>
+          <li>Evaluated model responses, generated adversarial prompts, and proposed mitigation strategies.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Research Intern, Gamma Lab</div>
+          <div class="item-meta">Beijing, China · Jan 2024 - Nov 2024</div>
+        </div>
+        <ul>
+          <li>Participated in regular group meetings and research discussions.</li>
+          <li>Contributed to improving the HGAT algorithm in the GammaGL library.</li>
+          <li>Assisted in implementing and testing new features for GammaGL.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Amazon Nova AI Challenge</div>
+          <div class="item-meta"><a href="https://www.amazon.science/nova-ai-challenge/proceedings/stepwise-multi-turn-jailbreak-attacks-on-code-llms-via-task-decomposition-and-test-time-scaling" target="_blank" rel="noreferrer">Report</a></div>
+        </div>
+        <ul>
+          <li>Built a multi-turn jailbreak agent and won 1st place in Round 2.</li>
+          <li>Gave a finalist presentation at Amazon Seattle HQ.</li>
+          <li>Designed a scalable red-teaming dataset pipeline and analyzed interaction logs.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">MultiTurn JailBreak Agent</div>
+          <div class="item-meta"><a href="https://github.com/martinjingyu/MultiTurn-JailBreak-Agent" target="_blank" rel="noreferrer">GitHub</a></div>
+        </div>
+        <ul>
+          <li>Implemented modular attacker agents and multi-turn planning strategies.</li>
+          <li>Developed an automated evaluation system for adversarial robustness tests.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Kaggle Red-Teaming Challenge</div>
+          <div class="item-meta">
+            <a href="https://github.com/martinjingyu/KaggleChallenge" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <ul>
+          <li>Developed AutoMTCR, a modular framework for multi-turn red-teaming of large language models.</li>
+          <li>Implemented MCTS-guided search and response evaluators to probe model vulnerabilities.</li>
+          <li>Contributed a public writeup on automated LLM safety testing.</li>
+        </ul>
+        <p><a href="https://www.kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/writeups/SafoLab-red-teaming-challenge" target="_blank" rel="noreferrer">Kaggle writeup</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">EMIR Specific RAG</div>
+          <div class="item-meta"><a href="https://github.com/martinjingyu/emir-specific-rag" target="_blank" rel="noreferrer">GitHub</a></div>
+        </div>
+        <ul>
+          <li>Developed a RAG system tailored for EMIR regulations in the finance domain.</li>
+          <li>Implemented document retrieval, indexing, and LLM reasoning for regulatory QA.</li>
+          <li>Built a proof-of-concept interface for EMIR-specific compliance questions.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">SaveWise</div>
+          <div class="item-meta"><a href="https://github.com/martinjingyu/savewise" target="_blank" rel="noreferrer">GitHub</a></div>
+        </div>
+        <ul>
+          <li>Co-developed a voice-based budgeting app for fast expense tracking.</li>
+          <li>Implemented speech recognition and Whisper-based transcription.</li>
+          <li>Designed an LLM financial assistant for budgeting insights and spending suggestions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Reports</h2>
+
+      <div class="item">
+        <div class="item-title">Stepwise Multi-turn Jailbreak Attacks on Code LLMs via Task Decomposition and Test-time Scaling</div>
+        <p>
+          Amazon Nova AI Challenge.
+          <a href="https://www.amazon.science/nova-ai-challenge/proceedings/stepwise-multi-turn-jailbreak-attacks-on-code-llms-via-task-decomposition-and-test-time-scaling" target="_blank" rel="noreferrer">Link</a>
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-title">AutoMTCR: Red Teaming with LLM-Based Attacker Agents and MCTS Multi-Turn Probing</div>
+        <p>
+          Kaggle Red-Teaming Challenge Report.
+          <a href="https://www.kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/writeups/SafoLab-red-teaming-challenge" target="_blank" rel="noreferrer">Link</a>
+        </p>
+      </div>
+    </section>
+
+    <p class="footer">For GitHub Pages, rename this file to <code>index.html</code>.</p>
+  </main>
+</body>
+</html>
